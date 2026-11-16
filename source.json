@@ -1,0 +1,16 @@
+{
+  "scrapers": [
+    {
+      "name": "Bilibili",
+      "urlPattern": "bilibili.com",
+      "searchUrl": "https://search.bilibili.com/all?keyword={term}"
+    }
+  ],
+  "file": "bilibili.js",
+  "videos": [
+    {
+      "match": "^https://player\\.bilibili\\.com/player\\.html\\?(?:bvid=BV[0-9A-Za-z]+|aid=\\d+)(?:&.*)?$",
+      "embed": true
+    }
+  ]
+}
